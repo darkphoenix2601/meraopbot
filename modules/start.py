@@ -34,7 +34,7 @@ async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>𝐇𝐞𝐲 👋 {message.from_user.first_name}
 
-𝐈 𝐚𝐦 𝐂𝐚𝐫𝐯𝐢𝐧𝐚𝐥 𝐌𝐮𝐬𝐢𝐜 𝐁𝐨𝐭, 𝐔𝐬𝐞 𝐦𝐞 𝐭𝐨 𝐩𝐥𝐚𝐲 𝐦𝐮𝐬𝐢𝐜 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩𝐬 𝐕𝐨𝐢𝐜𝐞 𝐂𝐡𝐚𝐭.
+𝐈 𝐚𝐦 Doreamon 𝐌𝐮𝐬𝐢𝐜 𝐁𝐨𝐭, 𝐔𝐬𝐞 𝐦𝐞 𝐭𝐨 𝐩𝐥𝐚𝐲 𝐦𝐮𝐬𝐢𝐜 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩𝐬 𝐕𝐨𝐢𝐜𝐞 𝐂𝐡𝐚𝐭.
 𝐇𝐨𝐬𝐭𝐞𝐝 𝐎𝐧 𝐕𝐏𝐒, 𝐒𝐨 𝐧𝐨 𝐥𝐚𝐠
 
 🥴𝐍𝐞𝐞𝐝 𝐇𝐞𝐥𝐩!
@@ -54,10 +54,10 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=f"https://t.me/IncognitoOff"
+                        "💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=f"https://t.me/phoenix_music_suport"
                     ),
                     InlineKeyboardButton(
-                        "🔊 𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url=f"https://t.me/IncognitoNetwork"
+                        "🔊 𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url=f"https://t.me/phoenix_music_new"
                     )
                 ],
                 [
