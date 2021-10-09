@@ -20,7 +20,7 @@ from config import SUDO_USERS, SUPPORT_GROUP
 
 
 # Stats Of Your Bot
-@Client.on_message(filters.command("stats"))
+@Client.on_message(filters.command("system"))
 @sudo_users_only
 async def botstats(_, message: Message):
     total, used, free = shutil.disk_usage(".")
@@ -31,7 +31,7 @@ async def botstats(_, message: Message):
     ram_usage = psutil.virtual_memory().percent
     disk_usage = psutil.disk_usage('/').percent
     await message.reply_text(
-        text=f"📊 𝗦𝘁𝗮𝘁𝘀  \n\n**🤖 Vᴇʀꜱɪᴏɴ:** `v8.3` \n\n**💾 𝗗𝗶𝘀𝗸 𝗨𝘀𝗮𝗴𝗲,** \n » **Dɪꜱᴋ Sᴘᴀᴄᴇ:** `{total}` \n » **Uꜱᴇᴅ:** `{used}({disk_usage}%)` \n » **Fʀᴇᴇ:** `{free}` \n\n**🎛 𝗛𝗮𝗿𝗱𝘄𝗮𝗿𝗲 𝗨𝘀𝗮𝗴𝗲,** \n » **CPU Uꜱᴀɢᴇ:** `{cpu_usage}%` \n » **RAM Uꜱᴀɢᴇ:** `{ram_usage}%`",
+        text=f"📊 System  \n\n**🤖 Vᴇʀꜱɪᴏɴ:** `v8.3` \n\n**💾 𝗗𝗶𝘀𝗸 𝗨𝘀𝗮𝗴𝗲,** \n » **Dɪꜱᴋ Sᴘᴀᴄᴇ:** `{total}` \n » **Uꜱᴇᴅ:** `{used}({disk_usage}%)` \n » **Fʀᴇᴇ:** `{free}` \n\n**🎛 𝗛𝗮𝗿𝗱𝘄𝗮𝗿𝗲 𝗨𝘀𝗮𝗴𝗲,** \n » **CPU Uꜱᴀɢᴇ:** `{cpu_usage}%` \n » **RAM Uꜱᴀɢᴇ:** `{ram_usage}%`",
         parse_mode="Markdown",
         quote=True
     )
